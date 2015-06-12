@@ -1,0 +1,52 @@
+    body {  /* make it apply to everything, everything exists in everything in those tags */
+    font-family: arial;
+    background-image: url("http://envirosafety.ca/wp-content/uploads/2015/04/simple_blue_wallpaper_by_eassd1-d3atjhj.jpg");
+    display: flex;
+  
+    }
+
+    .my-username {
+      color: green;
+      padding-right: 20px;
+      font-size: 25px; 
+    }
+
+    input {
+      width: 190px;
+
+    }
+
+    .user-name {
+      font-size: 25px;
+      color: gray;
+      padding-right: 20px;
+    }
+
+    li {
+      list-style-type: none;
+
+    }
+
+    h2 {
+      background: #E1FFFF;
+      border: solid 1px black;
+      width: 600px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      padding-left: 3px;
+      font-size: 30px;
+    }
+
+    .messages{
+      border:solid 1px black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 562px;
+      background: #E1FFFF;
+    }
+ 
+    .container {
+      margin: auto;
+      display: none;
+    }

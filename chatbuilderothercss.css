@@ -1,0 +1,25 @@
+  h2 {
+      background: #E1FFFF;
+      border: solid 1px black;
+      width: 600px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      padding-left: 3px;
+      font-size: 30px;
+      margin: auto;
+    }
+
+    .messages{
+      border:solid 1px black;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 562px;
+      background: #E1FFFF;
+      margin: auto;
+    }
+
+    button {
+      margin: auto;
+
+    }
