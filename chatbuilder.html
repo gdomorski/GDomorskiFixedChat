@@ -6,7 +6,6 @@
     <link href="chatbuilder.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <title>Chatbuilder</title>
-
     <script src="http://chatbuilder.hackreactor.com/ChatBuilder.js"></script>
 
 
@@ -14,6 +13,10 @@
 
   </head>
   <body>
+
+    <div class="mask"></div>
+
+  
 
     <div class="container">
       <h2>Greg Domorski's Fixed ChatBuilder App</h2>
@@ -23,11 +26,24 @@
       <button onclick="changeUserName()">Change Username </button>
       <button onclick="resizeText(1)"> Increase Text Size</button>
       <button onclick="resizeText(-1)"> Decrease Text Size</button>
+      <button class='open'>Register Your Username</button>
       <ul class="messages">  </ul>
  
     </div>
+  
 
-
+      <form class="pop-up-box">
+        <h3> Register Your Username </h3>
+        <label>First Name:<label>
+        <input type="text"/>  <p>
+        <label>Last Name:<label>
+        <input type="text"/>  <p>
+        <label>Desired Username:<label>
+        <input type="text"/>  <p>
+        <label>Email:<label>
+        <input type="text"/> <p>
+        <button type='button' class="close">Register</button> 
+      </form>
 
 
 
@@ -75,20 +91,31 @@
       var msgLength = 0;
       var newUserName;
 
+      
+
       $(document).ready(function(){
         getMessages();
         $('.container').fadeIn(2000);
         $('input').keydown(function(event){
           if (event.keyCode === 13) {
             Chat.send($('.draft').val()); 
-        };
+          };
+        });
+
+        $('.open').click(function(){
+          $('.pop-up-box').fadeIn(1800);
+          $('.mask').fadeIn(400);
+
+        });
+        $('.close').click(function(){
+          $('.pop-up-box').fadeOut(1800);
+          $('.mask').fadeOut(1800);
+        });
+
+
+       
 
       });
-
-
-
-
-      })
 
 
       Chat.display = function (msg){
